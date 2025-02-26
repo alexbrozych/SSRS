@@ -3,35 +3,8 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSource1">
-      <DataSourceReference>/DS_Development</DataSourceReference>
-      <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>8d097293-a2a5-45d0-b8a3-98fd87d7f070</rd:DataSourceID>
-    </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="dir_tree">
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@UNCPath">
-            <Value>=Parameters!UNCPath.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandText>exec master..xp_dirtree @UNCPath</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="subdirectory">
-          <DataField>subdirectory</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="depth">
-          <DataField>depth</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -250,10 +223,6 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="UNCPath">
-      <DataType>String</DataType>
-      <Prompt>UNC Path</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
