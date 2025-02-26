@@ -46,6 +46,10 @@
       <DataType>String</DataType>
       <Prompt>UserName</Prompt>
     </ReportParameter>
+    <ReportParameter Name="userID">
+      <DataType>String</DataType>
+      <Prompt>userID</Prompt>
+    </ReportParameter>
     <ReportParameter Name="DateFrom">
       <DataType>String</DataType>
       <Prompt>DateFrom</Prompt>
