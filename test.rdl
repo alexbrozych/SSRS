@@ -8,26 +8,10 @@
   <ReportSections>
     <ReportSection>
       <Body>
-        <ReportItems>
-        </ReportItems>
-        <Height>84.1375mm</Height>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-        </Style>
       </Body>
       <Width>152.4mm</Width>
       <Page>
         <PageFooter>
-          <Height>0.26458mm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -48,9 +32,6 @@
       <NumberOfRows>2</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>UNCPath</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
