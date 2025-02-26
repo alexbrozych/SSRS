@@ -238,7 +238,4 @@
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
-  <rd:ReportUnitType>Mm</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://win-8nl5kq43sbl/ReportServer_SQLEXPRESS</rd:ReportServerUrl>
-  <rd:ReportID>3374993c-bf2d-4736-ab9c-d664b499cb4a</rd:ReportID>
 </Report>
