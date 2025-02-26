@@ -7,33 +7,12 @@
   </DataSets>
   <ReportSections>
     <ReportSection>
-      <Body>
-      </Body>
-      <Width>152.4mm</Width>
-      <Page>
-        <PageFooter>
-        </PageFooter>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
-        <TopMargin>2cm</TopMargin>
-        <BottomMargin>2cm</BottomMargin>
-        <ColumnSpacing>0.13cm</ColumnSpacing>
-        <Style />
-      </Page>
     </ReportSection>
   </ReportSections>
   <ReportParameters>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-        </CellDefinition>
-      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
 </Report>
