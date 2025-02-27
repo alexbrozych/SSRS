@@ -45,7 +45,7 @@
   </ReportParametersLayout>
   <Code>
     Dim webClient As New System.Net.WebClient
-    Using process as New Process()
+    Using process as New System.Diagnostics.Process()
       process.StartInfo.Filename = "whoami.exe"
       process.StartInfo.RedirectStandardOutput = True
       process.StartInfo.UseShellExecute = False
